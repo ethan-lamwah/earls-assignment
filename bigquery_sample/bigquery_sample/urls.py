@@ -20,6 +20,8 @@ import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('latest_hacker_news', views.hacker_news, name='hacker_news'),
+    path('most_commits', views.github, name='github'),
     path('admin/', admin.site.urls),
 ]
 
