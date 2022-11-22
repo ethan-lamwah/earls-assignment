@@ -9,7 +9,7 @@ There are two parts to this assignment:
 2. Based on an ERD, compile queries to solve three questions.
 
 
-## Part 1: Django BigQuery Application
+## Part 1: Django BigQuery Application [(README)](https://github.com/ethan-lamwah/earls-assignment/tree/main/bigquery_sample)
 
 1. Set up the Django web framework with the `google-cloud-bigquery` client library from pip. Use the skeleton code in `bigquery_sample/` as your foundation.
 2. Verify that the application can run on localhost.
