@@ -28,7 +28,11 @@ Ensure you have a working environemnt installed
     git clone https://github.com/ethan-lamwah/earls-assignment.git
     ```
 
-2. Change directory to the project `cd earls-assignment`
+2. Change directory to `earls-assignment` folder
+
+    ```zsh
+    cd earls-assignment/
+    ```
 
 3. Create a [virtual environment](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#installing-virtualenv) by running `venv`.
 
@@ -62,9 +66,13 @@ Ensure you have a working environemnt installed
 
 5. Change directory to `bigquery_sample` project
 
-6. Install all packages and dependencies using requirements files
+    ```zsh
+    cd bigquery_sampleD/
+    ```
 
-    The `requirements.txt` includes `django 2.2` and `google-cloud-bigquery 3.4.0`
+6. Install all packages using requirements files
+
+    The `requirements.txt` includes all dependencies of `django 2.2` and `google-cloud-bigquery 3.4.0`
 
     ```zsh
     pip install -r requirements.txt
@@ -92,7 +100,7 @@ Ensure you have a working environemnt installed
 
 The default ADC is set to use `./credentials/application_default_credentials.json` as User credentials.
 
-If you wish to [provide your own credentials set-up](https://cloud.google.com/docs/authentication/provide-credentials-adc) like [service account](https://cloud.google.com/docs/authentication/application-default-credentials#attached-sa), simply set `USE_GCLOUD_APPLICATION_DEFAULT_CREDENTIALS` in django `settings.py` to `False`. 
+If you wish to [provide your own credentials set-up](https://cloud.google.com/docs/authentication/provide-credentials-adc) like [service account](https://cloud.google.com/docs/authentication/application-default-credentials#attached-sa), simply set `USE_GCLOUD_APPLICATION_DEFAULT_CREDENTIALS` in django `settings.py` to `False`.
 
 ```py
 USE_GCLOUD_APPLICATION_DEFAULT_CREDENTIALS = False
@@ -100,7 +108,7 @@ USE_GCLOUD_APPLICATION_DEFAULT_CREDENTIALS = False
 
 ## Sample output
 
-Sample output from [`localhost:8080/latest_hacker_news`](localhost:8080/latest_hacker_news)
+Sample output from [localhost:8080/latest_hacker_news](localhost:8080/latest_hacker_news)
 
 ```json
 [
@@ -137,7 +145,7 @@ Sample output from [`localhost:8080/latest_hacker_news`](localhost:8080/latest_h
 ]
 ```
 
-Sample output from [`localhost:8080/most_commits`](localhost:8080/most_commits)
+Sample output from [localhost:8080/most_commits](localhost:8080/most_commits)
 
 ```json
 [
