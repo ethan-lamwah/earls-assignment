@@ -1,10 +1,8 @@
 from django.http import HttpResponse
 from google.cloud import bigquery
-
 from common.util import helper
-
-# import os
 import json
+
 
 def index(request):
     return HttpResponse("Hello, world.")

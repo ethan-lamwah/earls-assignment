@@ -119,3 +119,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Use default user credentials to provide Google ADC in a local development environment
+USE_GCLOUD_APPLICATION_DEFAULT_CREDENTIALS = True
+
