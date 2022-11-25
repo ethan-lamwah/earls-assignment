@@ -78,7 +78,9 @@ Ensure you have a working environemnt installed
     pip install -r requirements.txt
     ```
 
-7. Run django server at `8080` port
+7. [Configure ADC setup](#configure-adc-setup-in-django-settingspy) to your own credentials
+
+8. Run django server at `8080` port
 
     For `Unix/MacOS`
 
@@ -99,6 +101,8 @@ Ensure you have a working environemnt installed
 ### Configure ADC setup in django `settings.py`
 
 The default ADC is set to use `./credentials/application_default_credentials.json` as User credentials.
+
+***(You have to provide your own credentials at the location since the defualt credential is revoked. Otherwise, you need to configue the django settings.py as below).***
 
 If you wish to [provide your own credentials set-up](https://cloud.google.com/docs/authentication/provide-credentials-adc) like [service account](https://cloud.google.com/docs/authentication/application-default-credentials#attached-sa), simply set `USE_GCLOUD_APPLICATION_DEFAULT_CREDENTIALS` in django `settings.py` to `False`.
 
